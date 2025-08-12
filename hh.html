@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>image members</title>
+  <style>
+    body {
+      background: black;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      color: gold;
+      margin: 20px 0;
+    }
+    
+    .image-container {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px;
+      border: 3px solid gold;
+      border-radius: 10px;
+      box-shadow: 0 0 15px gold, 0 0 30px rgba(255, 215, 0, 0.5);
+      animation: glow 2s infinite alternate;
+      transition: all 0.3s ease;
+    }
+    
+    .image-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px gold, 0 0 40px rgba(255, 215, 0, 0.7);
+    }
+    
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.5);
+      }
+      to {
+        box-shadow: 0 0 20px gold, 0 0 40px rgba(255, 215, 0, 0.8);
+      }
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      display: block;
+    }
+    
+    .footer h3 {
+      color: red;
+      text-shadow: 0 0 10px #0027FF, 0 0 20px #B800FF, 0 0 30px #EF0000;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+      animation: text-glow 2s infinite alternate;
+    }
+    
+    @keyframes text-glow {
+      from {
+        text-shadow: 0 0 10px #0027FF, 0 0 20px #B800FF, 0 0 30px #EF0000;
+      }
+      to {
+        text-shadow: 0 0 20px #00FFA5, 0 0 30px #64ED0C, 0 0 40px #00F1FF;
+      }
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 1px solid white;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+    
+    .social-link:hover {
+      background: #EDEDED;
+      color: red;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px gold;
+    }
+    
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .bot-name {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+      
+      .commands-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      
+      .command-item {
+        padding: 12px;
+      }
+      
+      .social-links {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .social-link {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .bot-name {
+        font-size: 2rem;
+      }
+      
+      .terminal-header {
+        padding: 12px 15px;
+      }
+      
+      .commands-section {
+        padding: 20px 15px;
+      }
+    }
+    
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #000;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #00ff41;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00cc33;
+    }
+    
+    p {
+      color: gold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>صورة لاعضاء الفرقة :</h1>
+  
+  <div class="image-container">
+    <img src="dima.jpg" alt="صورة أعضاء الفرقة" />
+  </div>
+  
+  <div class="footer">
+    <h3>═══❖Maneger❖═══</h3>
+    <div class="social-links">
+      <a href="https://wa.me/21699276739" class="social-link" target="_blank">
+        <svg class="social-icon" viewBox="0 0 12 24">
+          <path>d="https://images.app.goo.gl/tuSzg"</path>
+        </svg>
+        whatsapp
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
